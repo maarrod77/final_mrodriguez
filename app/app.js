@@ -34,7 +34,7 @@ fetch("https://rickandmortyapi.com/api/character")
       $contenedor.innerHTML += `
       <div class="tarjet">
         <img class= "imagen" src="${personajes[i].image}">
-        <h3 class = "titulo-caracteres">${personajes[i].name}</h3>
+        <h3>${personajes[i].name}</h3>
         <p>Gender: ${personajes[i].gender}</p>
         <p>Species: ${personajes[i].species}</p>
         <p>Status: ${personajes[i].status}</p>

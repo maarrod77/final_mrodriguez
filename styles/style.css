@@ -16,7 +16,7 @@ h2 {
     font-size: 65px;
     text-shadow: 3px -3px 1px rgb(255, 255, 255);
     text-align: center;
-    padding: 20px; 
+    padding: 10px; 
     -webkit-text-stroke: 1.5px black;
  }    
 
@@ -30,7 +30,6 @@ header {
     justify-content: space-between;/*Manejo del Eje secundario, Y en un contenedor Flex*/
     align-items: center;
     width: 100%;/* hacemos que la cabecera ocupe el ancho completo de la página */
-    padding: 5px;
 }
 
 #iconoserie img{
@@ -39,7 +38,7 @@ header {
 }
 
 #nombreserie img {
-    width: 550px;
+    width: 500px;
     padding: 0px;
 }
 
@@ -113,7 +112,7 @@ main #personajes .contenedor .tarjet{
 
 main #personajes .contenedor h3{
     color: black;
-    font-size: 3px;
+    font-size: 30px;
     text-align: center;
 }
 
@@ -182,7 +181,7 @@ footer div nav ul li {
 
 .ir-arriba {
 	display:none;
-	padding:5px;
+	padding:10px;
 	background:rgb(26, 7, 136);
 	font-size: 35px;
 	color:rgb(255, 255, 255);
