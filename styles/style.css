@@ -6,18 +6,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Ave+Display");
 
-body{
+/* body{
     line-height: 2em;
-}
+} */
 
 h2 {
     color: rgb(65, 187, 243);
-    background-color: rgba(10, 250, 2, 0.76);
-    font-size: 65px;
+    background-color: rgb(10,250,2);
+    font-size: 55px;
     text-shadow: 3px -3px 1px rgb(255, 255, 255);
     text-align: center;
-    padding: 10px; 
     -webkit-text-stroke: 1.5px black;
+    padding-top: 5px;
  }    
 
 /*----------------------------------------------------------------------------------------*/
@@ -26,20 +26,19 @@ header {
     background-color: black;
     background-size: cover;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: space-between;/*Manejo del Eje secundario, Y en un contenedor Flex*/
-    align-items: center;
+    align-items: center; */
     width: 100%;/* hacemos que la cabecera ocupe el ancho completo de la página */
+
 }
 
-#iconoserie img{
-    width: 250px;
-    padding: 0px;
+header #iconoserie img{
+    width: 200px;
 }
 
-#nombreserie img {
-    width: 500px;
-    padding: 0px;
+header #nombreserie img {
+    width: 350px;
 }
 
 header nav ul {
@@ -47,6 +46,8 @@ header nav ul {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header nav ul li a {
@@ -59,14 +60,13 @@ header nav ul li a {
 header nav ul li {
     padding: 5px;
     margin: 10px;
-    background-color: FFFFF;
 }
 
 /*-------------------------------------------------------------------------------------------------*/
 /*-------------------------------------Estilos Header Sinopsis-------------------------------------*/
 main #sinopsis {
     background-color: rgb(110, 228, 236); 
-    padding: 30px;
+    /*padding: 30px;*/
     align-items: center;
     justify-content: space-between;
 }
@@ -209,6 +209,7 @@ footer div nav ul li {
 
     header #menuopciones ul {
         display: flex;
+        flex-wrap: wrap;
         align-content: center;
         justify-content: space-between;
     }
