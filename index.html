@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick And Morty</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="app/app.js"></script>
+</head>
+
+<body>
+    <span class="ir-arriba icon-circle-up"></span>
+    <header>
+        <div id="iconoserie">
+            <img src="https://rickandmorty-finalproject-mairaledesma.vercel.app/img/rickandmorty-image.png"
+                alt="Icono de Pagina">
+        </div>
+        <div id="nombreserie">
+            <img src="https://rickandmorty-finalproject-mairaledesma.vercel.app/img/logo-rickandmorty.png"
+                alt="Imagen Nombre Serie">
+        </div>
+        <nav id= "menuopciones" class="menuopciones">
+            <ul>
+                <li>
+                    <a href="#sinopsis">SINOPSIS</a>
+                </li>
+                <li>
+                    <a href="#personajes">CHARACTERS</a>
+                </li>
+                <li>
+                    <a href="#ver_en_linea">WATCH LIVE</a>
+                </li>
+                <li>
+                    <a href="#biografia">BIOGRAPHY</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Seccion Sinopsis-->
+        <section id="sinopsis" class="sinopsis">
+            <h2>Sinopsis</h2>
+            <div>
+                <img src="https://www.infobae.com/new-resizer/hP-Lh_HRnsQIAX1JIPOF6molSHY=/992x558/filters:format(webp):quality(85)/cloudfront-us-east-1.images.arcpublishing.com/infobae/DWMLHZSLTZB2VARS5777M3L4ZM.jpg"
+                    alt="Imagen de Ambos Personajes">
+            </div>
+            <div>
+                <p>The series follows the misadventures of cynical mad scientist Rick Sanchez and his good-hearted but
+                    fretful grandson Morty Smith, who split their time between domestic life and interdimensional
+                    adventures that take place across an infinite number of realities, often travelling to other planets
+                    and dimensions through portals and on Rick's flying saucer. The general concept of Rick and Morty
+                    relies on two conflicting scenarios: domestic family drama, and an alcoholic grandfather dragging
+                    his grandson into hijinks. </p>
+                <p> <b>Created by Justin Roiland and Dan Harmon.</b> </p>
+                <p> <b>Release: 2013.</b> </p>
+                <p> <b>Country of origin: USA.</b> </p>
+            </div>
+        </section>
+        <!-- Seccion Personajes con API's incrustada...-->
+        <section id="personajes" class="personajes">
+            <div><h2>Characters</h2></div>
+            <div id="contenedor" class="contenedor"></div>
+        </section>
+        <!-- Seccion Ver en Linea -->
+        <section id="ver_en_linea" class="ver_en_linea">
+            <h2>Watch Live</h2>
+            <section id=contenido class="contenido">
+                <a title="Link HBO" href="https://www.hbomax.com/ar/es/series/urn:hbo:series:GXkRjxwjR68PDwwEAABKJ"><img
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/51/HBO_HD_logo.png" alt="Link HBO"/></a>
+                <img src="https://i.blogs.es/7fef93/rick-morty/1366_2000.jpeg" 
+                    alt="Mosaico Ricky y Morty en HBO">
+            </section>
+            <p> All 6 seasons of Rick and Morty are available on HBO Max. It has a total of 61 episodes. </p>
+        </section>
+    </main>
+    <footer id="biografia">
+        <div>
+            <h3>Made by Mariano Rodriguez.</h3>
+            <p>Introduction to Frontend</p>
+            <p>March/April 2023</p>
+            <p>Teacher: Gabriel Alberini</p>
+            <p>Argentina Programa 4.0</p>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5">
+                            </path>
+                        </svg> My Github profile</li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="24"
+                            height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z">
+                            </path>
+                            <path d="M3 7l9 6l9 -6"></path>
+                        </svg> Contact me</li>
+                </ul>
+            </nav>
+        </div>
+
+    </footer>
+</body>
+
+</html>

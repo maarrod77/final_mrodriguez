@@ -1,0 +1,242 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ave+Display");
+
+body{
+    line-height: 2em;
+}
+
+h2 {
+    color: rgb(65, 187, 243);
+    background-color: rgba(10, 250, 2, 0.76);
+    font-size: 65px;
+    text-shadow: 3px -3px 1px rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px; 
+    -webkit-text-stroke: 1.5px black;
+ }    
+
+/*----------------------------------------------------------------------------------------*/
+/*-------------------------------------Estilos Header-------------------------------------*/
+header {
+    background-color: black;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;/*Manejo del Eje secundario, Y en un contenedor Flex*/
+    align-items: center;
+    width: 100%;/* hacemos que la cabecera ocupe el ancho completo de la página */
+    padding: 5px;
+}
+
+#iconoserie img{
+    width: 250px;
+    padding: 0px;
+}
+
+#nombreserie img {
+    width: 550px;
+    padding: 0px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgb(48, 133, 182);
+    text-shadow: 1px -2px 2px white;
+    font-size: 40px;
+}
+
+header nav ul li {
+    padding: 5px;
+    margin: 10px;
+    background-color: FFFFF;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Estilos Header Sinopsis-------------------------------------*/
+main #sinopsis {
+    background-color: rgb(110, 228, 236); 
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main #sinopsis img {
+    display: block;
+    width: 900px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main #sinopsis p{
+    font-family: "Ave Display", cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+/*---------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Estilos Header Personajes-------------------------------------*/
+main #personajes .contenedor{
+    font-size: 25px;
+    padding: 30px;
+    background-color: rgb(110, 228, 236); 
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main #personajes .contenedor p{
+    size: 2px;
+    text-align: center;
+}
+ 
+main #personajes .contenedor .tarjet{
+    background-color:rgba(44, 142, 207, 0.507);
+    margin:15px;
+    padding: 10px;
+    border: 10px solid rgb(32, 122, 163);
+    border-radius: 20px; 
+}
+
+main #personajes .contenedor h3{
+    color: black;
+    font-size: 3px;
+    text-align: center;
+}
+
+main #personajes img{
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+/*-------------------------------------Estilos Header Ver en Vivo-------------------------------------*/
+main #ver_en_linea p{
+    font-family: "Ave Display", cursive;
+    background-color: rgb(110, 228, 236); 
+    font-size: 25px;
+    text-align: center;
+}
+
+main #ver_en_linea .contenido{
+    background-color:white; 
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(110, 228, 236);
+}
+
+main #ver_en_linea img{
+    width: 650px;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*-------------------------------------Estilos Footer------------------------------------*/
+footer {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    font-style: normal;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 1.3em;
+    text-decoration: none;
+    color: rgb(48, 133, 182);
+    text-shadow: 1px -1px 1px white;
+    font-size: 15px;  
+}
+
+footer div nav ul{
+    list-style: none;
+}
+
+footer div nav ul li {
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+/*---------------------------------------------------------------------------------------*/
+/*--------------------------------Estilos Boton Ir Arriba--------------------------------*/
+.icon-circle-up:before {
+    content: "\ea41";
+}
+
+.ir-arriba {
+	display:none;
+	padding:5px;
+	background:rgb(26, 7, 136);
+	font-size: 35px;
+	color:rgb(255, 255, 255);
+	cursor:pointer;
+	position: fixed;
+	bottom:10px;
+	right:10px;
+}
+
+/*---------------------------------------------------------------------------*/
+/*--------------------------------Media Query--------------------------------*/
+/* @media (max-width:880px){
+
+} */
+
+@media(max-width: 480px) {
+
+    /*********************Header*********************/
+    header nav ul li a {
+        text-decoration: none;
+        color: rgb(48, 133, 182);
+        text-shadow: 1px -2px 2px white;
+        font-size: 25px;
+    }
+
+    header #menuopciones ul {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+    }
+
+    #iconoserie img {
+        width: 200px;
+    }
+
+    #nombreserie img {
+        width: 260px;
+    }
+
+    /*********************main-sinopsis*********************/
+    main #sinopsis img {
+        width: 450px;
+    }
+
+    /*********************main-personajes*********************/
+    main #personajes .contenedor h3 {
+        color: black;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    /*********************main-ver_en_linea*********************/
+    main #ver_en_linea img {
+        width: 400px;
+    }
+}
+
